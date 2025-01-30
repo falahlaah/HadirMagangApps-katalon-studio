@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC16_Admin validates exiting the filter form</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4215862e-e3b6-4cb1-9950-db7097ec639d</testCaseGuid>
+</TestCaseEntity>

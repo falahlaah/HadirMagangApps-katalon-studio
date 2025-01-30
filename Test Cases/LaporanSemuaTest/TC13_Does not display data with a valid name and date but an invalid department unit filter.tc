@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC13_Does not display data with a valid name and date but an invalid department unit filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>560f837e-ec9c-47fa-9425-6c8c27038e2f</testCaseGuid>
+</TestCaseEntity>

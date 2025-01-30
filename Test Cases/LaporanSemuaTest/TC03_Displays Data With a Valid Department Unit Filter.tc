@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Displays Data With a Valid Department Unit Filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bd25aacf-6f35-4e27-a715-a0942a361b4b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC14_The data display does not change when the department name, date, and unit filters are empty</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5f7e6ae5-0644-4c63-8466-86af1c3c007d</testCaseGuid>
+</TestCaseEntity>

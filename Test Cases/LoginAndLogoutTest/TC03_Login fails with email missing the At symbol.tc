@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Login fails with email missing the At symbol</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4b4d0c18-fcee-4952-9e2c-9c5b8fc4ec17</testCaseGuid>
+</TestCaseEntity>

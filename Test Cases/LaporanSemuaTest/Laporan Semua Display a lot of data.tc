@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Laporan Semua Display a lot of data</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eba59964-58bc-4365-b433-2ce535246fbf</testCaseGuid>
+</TestCaseEntity>

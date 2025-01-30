@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC18_Admin changes rows per page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>891a6819-0a3e-4893-95d1-b82c5d1444ef</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC08_Does not display data with an invalid department unit filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b1139b25-b9f2-4bc2-ae42-996157c2810d</testCaseGuid>
+</TestCaseEntity>

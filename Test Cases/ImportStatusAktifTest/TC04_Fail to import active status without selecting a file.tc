@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_Fail to import active status without selecting a file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>526297f8-47d5-4edc-8ae3-6bc87f1c99df</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Fail to import active status with an invalid file format</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3a5ca870-a4fb-44a1-b7cf-20a38b0afcf7</testCaseGuid>
+</TestCaseEntity>

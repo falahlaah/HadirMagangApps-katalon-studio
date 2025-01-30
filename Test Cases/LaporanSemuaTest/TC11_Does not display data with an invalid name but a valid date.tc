@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC11_Does not display data with an invalid name but a valid date</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6a482c2a-9057-4844-a81e-d58fca875888</testCaseGuid>
+</TestCaseEntity>

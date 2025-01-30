@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Successfully import active status with a valid Excel file</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>51156476-c0be-4e5f-8878-7e63a726de61</testCaseGuid>
+</TestCaseEntity>

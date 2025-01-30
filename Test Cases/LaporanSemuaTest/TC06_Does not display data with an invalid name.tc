@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_Does not display data with an invalid name</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>66c6e451-867e-4544-9c89-9eaf77e66b6c</testCaseGuid>
+</TestCaseEntity>

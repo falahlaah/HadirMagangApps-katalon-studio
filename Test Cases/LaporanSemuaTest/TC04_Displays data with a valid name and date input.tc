@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_Displays data with a valid name and date input</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1f0509c2-455b-4e25-bace-b5e3929f5e11</testCaseGuid>
+</TestCaseEntity>

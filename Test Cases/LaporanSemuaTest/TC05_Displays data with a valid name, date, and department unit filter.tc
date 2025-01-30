@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_Displays data with a valid name, date, and department unit filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8f77d45d-e5dc-45f2-b2e1-658ab6c34bcf</testCaseGuid>
+</TestCaseEntity>

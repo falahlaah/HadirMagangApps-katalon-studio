@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_Login fails with email containing double At symbols</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>16914655-b644-40ef-9096-4040fbc44f4f</testCaseGuid>
+</TestCaseEntity>

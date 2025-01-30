@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_Login fails with an email that is not activated</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>226ca8f8-f77a-4967-ac4f-9bf97793f844</testCaseGuid>
+</TestCaseEntity>
