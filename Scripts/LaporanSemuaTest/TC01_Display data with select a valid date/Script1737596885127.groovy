@@ -55,8 +55,7 @@ def SelectStartDate(String date, String month, String year) {
     WebUI.selectOptionByValue(findTestObject('LaporanSemuaPage/Date section/select_Year'), year, false)
 
     List<WebElement> days = WebUI.findWebElements(findTestObject('LaporanSemuaPage/Date section/list_days'), 3)
-
-    for (WebElement day : days) {
+	    for (WebElement day : days) {
         if (day.getText().equalsIgnoreCase(date)) {
             day.click()
 
@@ -83,7 +82,7 @@ def SelectEndDate(String date, String month, String year) {
 
 def getVerifyDates() {
     String startDate = WebUI.getAttribute(findTestObject('LaporanSemuaPage/Date section/input_StartDate'), 'value')
-
+	
     if (startDate.contains('Agt')) {
         startDate = startDate.replace('Agt', 'Agu')
     }
@@ -101,22 +100,27 @@ def getVerifyDates() {
     LocalDate akhirDate = LocalDate.parse(endDate, formatter)
 
     List<WebElement> dates = WebUI.findWebElements(findTestObject('LaporanSemuaPage/Table Section/list_JamMasuk'), 3)
+	if(dates.isEmpty()) {
+		return false
+	}else {
+		for (WebElement dataDates : dates) {
+			String ActualdateDisplay = dataDates.getText()
+	
+			if (ActualdateDisplay.contains('Agt')) {
+				ActualdateDisplay = ActualdateDisplay.replace('Agt', 'Agu')
+			}
+			
+			LocalDate dateDisplay = LocalDate.parse(ActualdateDisplay, formatter)
+	
+			if (dateDisplay.isBefore(awalDate) || dateDisplay.isAfter(akhirDate)) {
+				return false
+			}
+			WebUI.scrollToPosition(0, 100)
+		}
+		
+		return true
+	}
 
-    for (WebElement dataDates : dates) {
-        String ActualdateDisplay = dataDates.getText()
-
-        if (ActualdateDisplay.contains('Agt')) {
-            ActualdateDisplay = ActualdateDisplay.replace('Agt', 'Agu')
-        }
-        
-        LocalDate dateDisplay = LocalDate.parse(ActualdateDisplay, formatter)
-
-        if (dateDisplay.isBefore(awalDate) || dateDisplay.isAfter(akhirDate)) {
-            return false
-        }
-		WebUI.scrollToPosition(0, 100)
-    }
     
-    return true
 }
 

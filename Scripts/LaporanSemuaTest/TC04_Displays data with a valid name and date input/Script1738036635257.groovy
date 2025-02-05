@@ -108,34 +108,44 @@ def getVerifyDates() {
 
     List<WebElement> dates = WebUI.findWebElements(findTestObject('LaporanSemuaPage/Table Section/list_JamMasuk'), 3)
 
-    for (WebElement dataDates : dates) {
-        String ActualdateDisplay = dataDates.getText()
+   if(dates.isEmpty()) {
+		return false
+	}else {
+		for (WebElement dataDates : dates) {
+			String ActualdateDisplay = dataDates.getText()
+	
+			if (ActualdateDisplay.contains('Agt')) {
+				ActualdateDisplay = ActualdateDisplay.replace('Agt', 'Agu')
+			}
+			
+			LocalDate dateDisplay = LocalDate.parse(ActualdateDisplay, formatter)
+	
+			if (dateDisplay.isBefore(awalDate) || dateDisplay.isAfter(akhirDate)) {
+				return false
+			}
+			WebUI.scrollToPosition(0, 100)
+		}
+		
+		return true
+	}
 
-        if (ActualdateDisplay.contains('Agt')) {
-            ActualdateDisplay = ActualdateDisplay.replace('Agt', 'Agu')
-        }
-        
-        LocalDate dateDisplay = LocalDate.parse(ActualdateDisplay, formatter)
-
-        if (dateDisplay.isBefore(awalDate) || dateDisplay.isAfter(akhirDate)) {
-            return false
-        }
-        
-        WebUI.scrollToPosition(0, 100)
-    }
     
-    return true
 }
 
 def getVerifyName() {
 	List<WebElement> list_name = WebUI.findWebElements(findTestObject('LaporanSemuaPage/Table Section/list_Name'), 3)
 	String searchName = WebUI.getText(findTestObject('LaporanSemuaPage/input_searchName'))
-	for (WebElement name : list_name) {
-		if (!name.getText().contains(searchName)){
-			return false;
+	if(list_name.isEmpty()) {
+		return false;
+	}else {
+		for (WebElement name : list_name) {
+			if (!name.getText().contains(searchName)){
+				return false;
+			}
+			WebUI.scrollToPosition(0, 100)
 		}
-		WebUI.scrollToPosition(0, 100)
+		return true;
 	}
-	return true;
+	
 }
 

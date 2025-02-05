@@ -55,15 +55,19 @@ WebUI.closeBrowser()
 
 def getVerifyUnit(String departement) {
     List<WebElement> list_unit = WebUI.findWebElements(findTestObject('LaporanSemuaPage/Table Section/list_Unit'), 3)
-
-    for (WebElement unit : list_unit) {
-        if (!(unit.getText().contains(departement))) {
-            return false
-        }
-        
-        WebUI.scrollToPosition(0, 100)
-    }
+	if(list_unit.isEmpty()) {
+		return false
+	}else {
+		for (WebElement unit : list_unit) {
+			if (!(unit.getText().contains(departement))) {
+				return false
+			}
+			
+			WebUI.scrollToPosition(0, 100)
+		}
+		
+		return true
+	}
     
-    return true
 }
 

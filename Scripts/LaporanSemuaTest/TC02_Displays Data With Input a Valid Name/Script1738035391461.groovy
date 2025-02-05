@@ -46,12 +46,17 @@ WebUI.closeBrowser()
 def getVerifyName() {
 	List<WebElement> list_name = WebUI.findWebElements(findTestObject('LaporanSemuaPage/Table Section/list_Name'), 3)
 	String searchName = WebUI.getText(findTestObject('LaporanSemuaPage/input_searchName'))
-	for (WebElement name : list_name) {
-		if (!name.getText().contains(searchName)){
-			return false;
+	if(list_name.isEmpty()) {
+		return false;
+	}else {
+		for (WebElement name : list_name) {
+			if (!name.getText().contains(searchName)){
+				return false;
+			}
+			WebUI.scrollToPosition(0, 100)
 		}
-		WebUI.scrollToPosition(0, 100)
+		return true;
 	}
-	return true;
+	
 }
 
